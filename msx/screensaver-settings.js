@@ -58,6 +58,34 @@ var OPTIONS = [
         info: "Mixkit 1779 · 1920x1080 · 720p · ~4.5 МБ",
         url: "https://assets.mixkit.co/videos/1779/1779-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "13",
+        label: "13. Поглаживание котёнка",
+        info: "Mixkit 1778 · 1920x1080 · 720p · ~6 МБ",
+        url: "https://assets.mixkit.co/videos/1778/1778-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "14",
+        label: "14. Белый кот у белой стены",
+        info: "Mixkit 1535 · 1920x1080 · 720p · ~4 МБ · минимализм",
+        url: "https://assets.mixkit.co/videos/1535/1535-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "15",
+        label: "15. Котята на кресле",
+        info: "Mixkit 32471 · 720p · ~4.7 МБ · спокойная (1080p недоступен)",
+        url: "https://assets.mixkit.co/videos/32471/32471-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "16",
+        label: "16. Серый котёнок на белом фоне",
+        info: "Mixkit 45407 · 720p · ~4.6 МБ (1080p недоступен)",
+        url: "https://assets.mixkit.co/videos/45407/45407-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
     }
 ];
 
@@ -216,7 +244,7 @@ function buildSettings() {
                         color: "msx-glass",
                         titleHeader: "",
                         titleFooter: "",
-                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны только горизонтальные варианты: «Котята», 3, 5, 8, 9, 10, 11, 12. Вертикальный вариант 1 удалён. По умолчанию: 8. Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
+                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны только горизонтальные варианты: «Котята», 3, 5, 8, 9–16. Вертикальный вариант 1 удалён. По умолчанию: 8. Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
                     }
                 ]
             }

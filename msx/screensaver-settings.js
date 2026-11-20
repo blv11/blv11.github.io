@@ -68,6 +68,14 @@ function getSelected() {
     return DEFAULT_SELECTED;
 }
 
+var lastAppliedKey = null;
+
+function currentKey() {
+    var enabled = getEnabled();
+    var selected = getSelected();
+    return (enabled ? "on:" : "off:") + selected;
+}
+
 function saveSettings(enabled, selected) {
     if (typeof TVXServices !== "undefined" && TVXServices.storage) {
         TVXServices.storage.set(STORAGE_ENABLED, enabled);
@@ -76,15 +84,24 @@ function saveSettings(enabled, selected) {
     }
 }
 
-function applyScreensaver() {
+function applyScreensaver(force) {
     var enabled = getEnabled();
     var selected = getSelected();
+    var key = (enabled ? "on:" : "off:") + selected;
+
+    if (!force && lastAppliedKey === key) {
+        return;
+    }
+
     if (!enabled) {
+        lastAppliedKey = key;
         try { TVXInteractionPlugin.executeAction("player:stop"); } catch (e1) {}
         try { TVXInteractionPlugin.executeAction("player:video:stop"); } catch (e2) {}
         return;
     }
+
     var opt = getOptionById(selected);
+    lastAppliedKey = key;
     TVXInteractionPlugin.executeAction("execute:service:video:data:http://msx.benzac.de/services/background.php", {
         url: opt.url,
         label: opt.label,
@@ -206,11 +223,10 @@ function buildChooserContent() {
 
 /******************************************************************************/
 function ScreensaverSettingsHandler() {
-    var self = this;
     var readyApplied = false;
 
-    function doApply() {
-        try { applyScreensaver(); } catch (e) {
+    function doApply(force) {
+        try { applyScreensaver(force); } catch (e) {
             try { TVXInteractionPlugin.error("Apply failed: " + e); } catch (e2) {}
         }
     }
@@ -219,13 +235,15 @@ function ScreensaverSettingsHandler() {
     this.ready = function() {
         if (!readyApplied) {
             readyApplied = true;
-            doApply();
+            doApply(true);
+        } else {
+            doApply(false);
         }
     };
     this.handleEvent = function(data) {
-        if (data && data.event == "app:ready" && !readyApplied) {
+        if (data && data.event == "app:ready") {
             readyApplied = true;
-            doApply();
+            doApply(!lastAppliedKey);
         }
     };
     this.handleData = function(data) {
@@ -234,37 +252,31 @@ function ScreensaverSettingsHandler() {
         if (action == "toggle") {
             var enabled = !getEnabled();
             saveSettings(enabled, getSelected());
-            doApply();
+            doApply(true);
             TVXInteractionPlugin.executeAction("reload:content");
         } else if (action.indexOf("select:") == 0) {
             var id = action.substr(7);
             saveSettings(getEnabled(), getOptionById(id).id);
-            doApply();
+            doApply(true);
             TVXInteractionPlugin.executeAction("[reload:content|back]");
         } else if (action.indexOf("preview:") == 0) {
             previewOption(action.substr(8));
         } else if (action == "apply") {
             readyApplied = true;
-            doApply();
+            doApply(true);
         }
     };
     this.handleRequest = function(dataId, data, callback) {
         try {
             if (dataId == "init") {
                 callback(buildSettings());
-                setTimeout(function() {
-                    doApply();
-                }, 0);
+                setTimeout(function() { doApply(false); }, 0);
             } else if (dataId == "chooser") {
                 callback(buildChooserContent());
-                setTimeout(function() {
-                    doApply();
-                }, 0);
+                setTimeout(function() { doApply(false); }, 0);
             } else {
                 callback(buildSettings());
-                setTimeout(function() {
-                    doApply();
-                }, 0);
+                setTimeout(function() { doApply(false); }, 0);
             }
         } catch (e) {
             try { callback(buildSettings()); } catch (e2) { callback(); }

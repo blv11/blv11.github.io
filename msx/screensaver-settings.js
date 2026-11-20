@@ -150,7 +150,7 @@ function applyScreensaver(force) {
 
     var opt = getOptionById(selected);
     lastAppliedKey = key;
-    TVXInteractionPlugin.executeAction("execute:service:video:data:http://msx.benzac.de/services/background.php", {
+    TVXInteractionPlugin.executeAction("execute:service:video:data:https://msx.benzac.de/services/background.php", {
         url: opt.url,
         label: opt.label,
         transparent: true

@@ -253,12 +253,18 @@ function ScreensaverSettingsHandler() {
             if (dataId == "init") {
                 callback(buildSettings());
                 setTimeout(function() {
-                    if (!readyApplied) { readyApplied = true; doApply(); }
+                    doApply();
                 }, 0);
             } else if (dataId == "chooser") {
                 callback(buildChooserContent());
+                setTimeout(function() {
+                    doApply();
+                }, 0);
             } else {
                 callback(buildSettings());
+                setTimeout(function() {
+                    doApply();
+                }, 0);
             }
         } catch (e) {
             try { callback(buildSettings()); } catch (e2) { callback(); }

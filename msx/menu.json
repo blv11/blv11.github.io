@@ -1,5 +1,8 @@
 {
    "headline": "Мой MSX",
+   "ready": {
+      "action": "interaction:load:https://blv11.github.io/msx/screensaver-settings.html"
+   },
    "menu": [
       {
          "label": "Бесплатное кино",

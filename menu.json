@@ -1,0 +1,16 @@
+{
+   "headline": "Мой MSX",
+   "menu": [
+      {
+         "label": "Бесплатное кино",
+         "icon": "movie",
+         "focus": true,
+         "data": "https://blv11.github.io/apps.json"
+      },
+      {
+         "label": "Настройки",
+         "icon": "settings",
+         "data": "request:interaction:init@https://blv11.github.io/screensaver-settings.html"
+      }
+   ]
+}

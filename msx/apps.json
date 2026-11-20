@@ -51,13 +51,6 @@
                      "headline": "{context:titleHeader}",
                      "text": "{context:titleFooter}{context:description}"
                   }
-               },
-               {
-                  "action": "delay:backdrop:0:interaction:load:http://msx.benzac.de/interaction/backdrop.html",
-                  "data": {
-                     "url": "{context:backdrop}",
-                     "type": 1
-                  }
                }
             ]
          }

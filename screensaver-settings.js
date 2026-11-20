@@ -5,85 +5,85 @@ var STORAGE_SELECTED = "screensaver_selected";
 var OPTIONS = [
     {
         id: "kittens",
-        label: "Котята",
-        info: "Бывшая заставка каталога · 960x540 · MP4",
+        label: "пїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ 960x540 пїЅ MP4",
         url: "https://blv11.github.io/msx/kittens.mp4?v=3",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "3",
-        label: "3. Спящий котёнок",
-        info: "Pixabay 330346 · 4098x2160 · 24 с · 32 МБ · горизонтальное",
+        label: "3. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "Pixabay 330346 пїЅ 4098x2160 пїЅ 24 пїЅ пїЅ 32 пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         url: "https://cdn.pixabay.com/video/2026/01/25/330346_large.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "5",
-        label: "5. Кот спит (AI)",
-        info: "Pixabay 246351 · 3840x2160 · 25 с · 5.7 МБ · горизонтальное",
+        label: "5. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (AI)",
+        info: "Pixabay 246351 пїЅ 3840x2160 пїЅ 25 пїЅ пїЅ 5.7 пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         url: "https://cdn.pixabay.com/video/2024/12/12/246351_large.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "8",
-        label: "8. Котёнок на жёлтом фоне (по умолчанию)",
-        info: "Pexels 7120008 · 1920x1080 · яркий фон · горизонтальное",
+        label: "8. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)",
+        info: "Pexels 7120008 пїЅ 1920x1080 пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         url: "https://videos.pexels.com/video-files/7120008/7120008-hd_1920_1080_25fps.mp4",
         image: "https://images.pexels.com/videos/7120008/pictures/preview-0.jpg"
     },
     {
         id: "9",
-        label: "9. Белый кот в траве",
-        info: "Mixkit 22732 · 1920x1080 · 1080p · ~33 МБ · спокойная",
+        label: "9. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 22732 пїЅ 1920x1080 пїЅ 1080p пїЅ ~33 пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         url: "https://assets.mixkit.co/videos/22732/22732-1080.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "10",
-        label: "10. Кот дремлет",
-        info: "Mixkit 4102 · 1920x1080 · 720p · ~5.5 МБ · спокойная",
+        label: "10. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 4102 пїЅ 1920x1080 пїЅ 720p пїЅ ~5.5 пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         url: "https://assets.mixkit.co/videos/4102/4102-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "11",
-        label: "11. Чёрный кот на белой кровати",
-        info: "Mixkit 1537 · 1920x1080 · 720p · ~6 МБ",
+        label: "11. ЧёпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 1537 пїЅ 1920x1080 пїЅ 720p пїЅ ~6 пїЅпїЅ",
         url: "https://assets.mixkit.co/videos/1537/1537-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "12",
-        label: "12. Игра с котёнком",
-        info: "Mixkit 1779 · 1920x1080 · 720p · ~4.5 МБ",
+        label: "12. пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 1779 пїЅ 1920x1080 пїЅ 720p пїЅ ~4.5 пїЅпїЅ",
         url: "https://assets.mixkit.co/videos/1779/1779-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "13",
-        label: "13. Поглаживание котёнка",
-        info: "Mixkit 1778 · 1920x1080 · 720p · ~6 МБ",
+        label: "13. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 1778 пїЅ 1920x1080 пїЅ 720p пїЅ ~6 пїЅпїЅ",
         url: "https://assets.mixkit.co/videos/1778/1778-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "14",
-        label: "14. Белый кот у белой стены",
-        info: "Mixkit 1535 · 1920x1080 · 720p · ~4 МБ · минимализм",
+        label: "14. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 1535 пїЅ 1920x1080 пїЅ 720p пїЅ ~4 пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         url: "https://assets.mixkit.co/videos/1535/1535-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "15",
-        label: "15. Котята на кресле",
-        info: "Mixkit 32471 · 720p · ~4.7 МБ · спокойная (1080p недоступен)",
+        label: "15. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
+        info: "Mixkit 32471 пїЅ 720p пїЅ ~4.7 пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (1080p пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)",
         url: "https://assets.mixkit.co/videos/32471/32471-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "16",
-        label: "16. Серый котёнок на белом фоне",
-        info: "Mixkit 45407 · 720p · ~4.6 МБ (1080p недоступен)",
+        label: "16. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",
+        info: "Mixkit 45407 пїЅ 720p пїЅ ~4.6 пїЅпїЅ (1080p пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)",
         url: "https://assets.mixkit.co/videos/45407/45407-720.mp4",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     }
@@ -185,14 +185,14 @@ function buildChooserItems() {
                     {
                         type: "button",
                         icon: "play-arrow",
-                        label: "Просмотр",
+                        label: "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         action: "interaction:commit",
                         data: { action: "preview:" + opt.id }
                     },
                     {
                         type: "button",
                         icon: isSel ? "check-circle" : "radio-button-unchecked",
-                        label: isSel ? "Выбрано" : "Выбрать эту заставку",
+                        label: isSel ? "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ" : "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         action: "interaction:commit",
                         data: { action: "select:" + opt.id }
                     }
@@ -212,18 +212,18 @@ function buildSettings() {
         reuse: false,
         restore: false,
         type: "pages",
-        headline: "Настройки",
+        headline: "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         pages: [
             {
-                headline: "Заставка",
+                headline: "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                 items: [
                     {
                         id: "toggle_enabled",
                         type: "control",
                         layout: "0,0,12,1",
                         icon: "wallpaper",
-                        label: "Вкл/выкл заставки",
-                        extensionLabel: enabled ? "Включена" : "Выключена",
+                        label: "пїЅпїЅпїЅ/пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+                        extensionLabel: enabled ? "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" : "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         extensionIcon: enabled ? SWITCH_ON : SWITCH_OFF,
                         action: "interaction:commit",
                         data: { action: "toggle" }
@@ -233,10 +233,10 @@ function buildSettings() {
                         type: "control",
                         layout: "0,1,12,1",
                         icon: "video-library",
-                        label: "Выбор заставки",
+                        label: "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         extensionLabel: opt.label,
                         extensionIcon: "chevron-right",
-                        action: "content:request:interaction:chooser@https://blv11.github.io/screensaver-settings.html"
+                        action: "content:request:interaction:chooser@http://blv11.github.io/screensaver-settings.html"
                     },
                     {
                         type: "default",
@@ -244,7 +244,7 @@ function buildSettings() {
                         color: "msx-glass",
                         titleHeader: "",
                         titleFooter: "",
-                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны только горизонтальные варианты: «Котята», 3, 5, 8, 9–16. Вертикальный вариант 1 удалён. По умолчанию: 8. Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
+                        text: "{col:msx-white}пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, 3, 5, 8, 9пїЅ16. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1 пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 8. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
                     }
                 ]
             }
@@ -258,7 +258,7 @@ function buildChooserContent() {
         reuse: false,
         restore: false,
         type: "list",
-        headline: "Выбор заставки",
+        headline: "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
         template: {
             type: "control",
             layout: "0,0,12,1",

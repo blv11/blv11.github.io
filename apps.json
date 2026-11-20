@@ -60,7 +60,7 @@
       }
    },
    "ready": {
-      "action": "interaction:load:https://blv11.github.io/screensaver-settings.html"
+      "action": "interaction:load:http://blv11.github.io/screensaver-settings.html"
    },
    "items": [
       {

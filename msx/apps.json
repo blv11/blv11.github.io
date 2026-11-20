@@ -67,12 +67,7 @@
       }
    },
    "ready": {
-      "action": "execute:service:video:data:http://msx.benzac.de/services/background.php",
-      "data": {
-         "url": "https://blv11.github.io/msx/kittens.mp4?v=3",
-         "label": "Котята",
-         "transparent": true
-      }
+      "action": "interaction:load:https://blv11.github.io/msx/screensaver-settings.html"
    },
    "items": [
       {

@@ -1,8 +1,8 @@
 {
    "name": "Мой MSX",
    "version": "1.0",
-   "parameter": "content:https://blv11.github.io/msx/apps.json",
-   "welcome": "content",
+   "parameter": "menu:https://blv11.github.io/msx/menu.json",
+   "welcome": "none",
    "launcher": {
       "icon": "play-circle-outline",
       "color": "msx-black-soft"

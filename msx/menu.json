@@ -3,10 +3,14 @@
    "menu": [
       {
          "label": "Бесплатное кино",
-         "icon": "play-circle-outline",
+         "icon": "movie",
          "focus": true,
-         "execute": true,
          "data": "https://blv11.github.io/msx/apps.json"
+      },
+      {
+         "label": "Настройки",
+         "icon": "settings",
+         "data": "request:interaction:init@https://blv11.github.io/msx/screensaver-settings.html"
       }
    ]
 }

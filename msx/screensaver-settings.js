@@ -281,12 +281,8 @@ function ScreensaverSettingsHandler() {
 
     this.init = function() {};
     this.ready = function() {
-        if (!readyApplied) {
-            readyApplied = true;
-            doApply(true);
-        } else {
-            doApply(false);
-        }
+        readyApplied = true;
+        doApply(true);
     };
     this.handleEvent = function(data) {
         if (data && data.event == "app:ready") {
@@ -318,13 +314,13 @@ function ScreensaverSettingsHandler() {
         try {
             if (dataId == "init") {
                 callback(buildSettings());
-                setTimeout(function() { doApply(false); }, 0);
+                setTimeout(function() { doApply(true); }, 0);
             } else if (dataId == "chooser") {
                 callback(buildChooserContent());
-                setTimeout(function() { doApply(false); }, 0);
+                setTimeout(function() { doApply(true); }, 0);
             } else {
                 callback(buildSettings());
-                setTimeout(function() { doApply(false); }, 0);
+                setTimeout(function() { doApply(true); }, 0);
             }
         } catch (e) {
             try { callback(buildSettings()); } catch (e2) { callback(); }

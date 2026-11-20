@@ -7,7 +7,7 @@ var OPTIONS = [
         id: "kittens",
         label: "������",
         info: "������ �������� �������� � 960x540 � MP4",
-        url: "https://blv11.github.io/msx/kittens.mp4?v=3",
+        url: "http://blv11.github.io/msx/kittens.mp4?v=3",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {

@@ -5,8 +5,8 @@ var STORAGE_SELECTED = "screensaver_selected";
 var OPTIONS = [
     {
         id: "kittens",
-        label: "Котята (по умолчанию)",
-        info: "Текущая заставка каталога · https://blv11.github.io/msx/kittens.mp4",
+        label: "Котята",
+        info: "Бывшая заставка каталога · https://blv11.github.io/msx/kittens.mp4",
         url: "https://blv11.github.io/msx/kittens.mp4?v=3",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
@@ -33,14 +33,14 @@ var OPTIONS = [
     },
     {
         id: "8",
-        label: "8. Котёнок на жёлтом фоне",
+        label: "8. Котёнок на жёлтом фоне (по умолчанию)",
         info: "Pexels 7120008 · 1920x1080 · яркий фон",
         url: "https://videos.pexels.com/video-files/7120008/7120008-hd_1920_1080_25fps.mp4",
         image: "https://images.pexels.com/videos/7120008/pictures/preview-0.jpg"
     }
 ];
 
-var DEFAULT_SELECTED = "kittens";
+var DEFAULT_SELECTED = "8";
 var SWITCH_ON = "msx-white:toggle-on";
 var SWITCH_OFF = "msx-white-soft:toggle-off";
 var RADIO_ON = "msx-white:radio-button-checked";
@@ -179,7 +179,7 @@ function buildSettings() {
                         color: "msx-glass",
                         titleHeader: "",
                         titleFooter: "",
-                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны варианты 1, 3, 5, 8 (и Котята по умолчанию). Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
+                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны варианты 1, 3, 5, 8 и «Котята». По умолчанию: 8. Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
                     }
                 ]
             }

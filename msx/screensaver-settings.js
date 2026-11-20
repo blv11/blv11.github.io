@@ -96,7 +96,6 @@ function applyScreensaver(force) {
     if (!enabled) {
         lastAppliedKey = key;
         try { TVXInteractionPlugin.executeAction("player:stop"); } catch (e1) {}
-        try { TVXInteractionPlugin.executeAction("player:video:stop"); } catch (e2) {}
         return;
     }
 

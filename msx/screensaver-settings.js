@@ -6,37 +6,58 @@ var OPTIONS = [
     {
         id: "kittens",
         label: "Котята",
-        info: "Бывшая заставка каталога · https://blv11.github.io/msx/kittens.mp4",
+        info: "Бывшая заставка каталога · 960x540 · MP4",
         url: "https://blv11.github.io/msx/kittens.mp4?v=3",
         image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
-        id: "1",
-        label: "1. Спящие котята при лунном свете",
-        info: "Pixabay 342209 · 1080x1920 (вертикальное) · 8 с · 2.8 МБ",
-        url: "https://cdn.pixabay.com/video/2026/03/24/342209_large.mp4",
-        image: "https://i.vimeocdn.com/video/342209.jpg"
-    },
-    {
         id: "3",
         label: "3. Спящий котёнок",
-        info: "Pixabay 330346 · 4098x2160 · 24 с · 32 МБ",
+        info: "Pixabay 330346 · 4098x2160 · 24 с · 32 МБ · горизонтальное",
         url: "https://cdn.pixabay.com/video/2026/01/25/330346_large.mp4",
-        image: "https://i.vimeocdn.com/video/330346.jpg"
+        image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "5",
         label: "5. Кот спит (AI)",
-        info: "Pixabay 246351 · 3840x2160 · 25 с · 5.7 МБ",
+        info: "Pixabay 246351 · 3840x2160 · 25 с · 5.7 МБ · горизонтальное",
         url: "https://cdn.pixabay.com/video/2024/12/12/246351_large.mp4",
-        image: "https://i.vimeocdn.com/video/246351.jpg"
+        image: "https://wals09.github.io/kf/img/bac.jpg"
     },
     {
         id: "8",
         label: "8. Котёнок на жёлтом фоне (по умолчанию)",
-        info: "Pexels 7120008 · 1920x1080 · яркий фон",
+        info: "Pexels 7120008 · 1920x1080 · яркий фон · горизонтальное",
         url: "https://videos.pexels.com/video-files/7120008/7120008-hd_1920_1080_25fps.mp4",
         image: "https://images.pexels.com/videos/7120008/pictures/preview-0.jpg"
+    },
+    {
+        id: "9",
+        label: "9. Белый кот в траве",
+        info: "Mixkit 22732 · 1920x1080 · 1080p · ~33 МБ · спокойная",
+        url: "https://assets.mixkit.co/videos/22732/22732-1080.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "10",
+        label: "10. Кот дремлет",
+        info: "Mixkit 4102 · 1920x1080 · 720p · ~5.5 МБ · спокойная",
+        url: "https://assets.mixkit.co/videos/4102/4102-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "11",
+        label: "11. Чёрный кот на белой кровати",
+        info: "Mixkit 1537 · 1920x1080 · 720p · ~6 МБ",
+        url: "https://assets.mixkit.co/videos/1537/1537-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
+    },
+    {
+        id: "12",
+        label: "12. Игра с котёнком",
+        info: "Mixkit 1779 · 1920x1080 · 720p · ~4.5 МБ",
+        url: "https://assets.mixkit.co/videos/1779/1779-720.mp4",
+        image: "https://wals09.github.io/kf/img/bac.jpg"
     }
 ];
 
@@ -195,7 +216,7 @@ function buildSettings() {
                         color: "msx-glass",
                         titleHeader: "",
                         titleFooter: "",
-                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны варианты 1, 3, 5, 8 и «Котята». По умолчанию: 8. Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
+                        text: "{col:msx-white}Текущая:{col} " + opt.label + "{br}{col:msx-white-soft}" + opt.info + "{br}{br}Доступны только горизонтальные варианты: «Котята», 3, 5, 8, 9, 10, 11, 12. Вертикальный вариант 1 удалён. По умолчанию: 8. Откройте «Выбор заставки», выберите вариант и нажмите «Просмотр»."
                     }
                 ]
             }

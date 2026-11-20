@@ -1,0 +1,29 @@
+{
+  "type": "list",
+  "headline": "Audio test",
+  "ready": {
+    "action": "data",
+    "data": {
+      "actions": [
+        {
+          "action": "execute:service:video:data:http://msx.benzac.de/services/background.php",
+          "data": {
+            "url": "https://blv11.github.io/msx/kittens.mp4?v=3",
+            "label": "Kittens",
+            "transparent": true
+          }
+        },
+        {
+          "action": "audio:auto:http://msx.benzac.de/media/audio1.mp3"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "titleHeader": "",
+      "description": "Test item",
+      "action": "info:test"
+    }
+  ]
+}

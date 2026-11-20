@@ -75,7 +75,7 @@
          "description": "{col:white}Lift TV{col}{br}Телевизионная версия Lift. Стартовый параметр: t.lftv.ws",
          "backdrop": "https://wals09.github.io/kf/img/bac.jpg",
          "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><rect width='128' height='128' rx='26' fill='%230b4a55'/><path d='M50 39l42 25-42 25z' fill='%23ffffff'/><rect x='26' y='97' width='76' height='9' rx='4.5' fill='%2350e3d0'/></svg>",
-         "action": "content:request:interaction:init@https://t.lftv.ws/msx/entry.html?v=msxauto20261116"
+         "action": "link:https://t.lftv.ws/msx/launch.html?v=msxauto20261116"
       },
       {
          "titleHeader": "",
